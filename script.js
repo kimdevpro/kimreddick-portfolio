@@ -73,7 +73,7 @@ if (heroTitle) {
 const projects = [
     {
         title: "API Weather Website",
-        image: "/assets/images/api-weather-website.jpg",
+        image: "./assets/images/api-weather-website.jpg",
         description: `A responsive weather dashboard built with HTML, CSS, and JavaScript. It fetches real-time data from WeatherAPI.com for a preset list of cities and allows users to mark favorites for quick access. Features include temperature, conditions, humidity, and wind speed, all displayed in a clean, mobile-friendly layout.`,
         liveLink: "https://kimdevpro.github.io/api-weather-website",
         codeLink: "https://github.com/kimdevpro/api-weather-website",
@@ -81,14 +81,14 @@ const projects = [
     },
     {
         title: "SaaS Landing Page",
-        image: "/assets/images/saas-landing-page.jpg",
+        image: "./assets/images/saas-landing-page.jpg",
         description: "A visually engaging landing page built with pure HTML and CSS, designed to promote a software-as-a-service product. It features a responsive layout, smooth scrolling navigation, feature sections, pricing cards, and a contact form. This project demonstrates a strong understanding of layout design, typography, and responsive styling without relying on JavaScript.",
         codeLink: "https://github.com/kimdevpro/saas-landing-page",
         techTags: ['HTML', 'CSS', 'Responsive']
     },
     {
         title: "HTML Images Gallery",
-        image: "/assets/images/html-image-gallery.jpg",
+        image: "./assets/images/html-image-gallery.jpg",
         description: "A responsive image gallery crafted using HTML and CSS, showcasing an elegant grid layout for displaying photographs or visual content. This project demonstrates the use of CSS Grid and Flexbox for layout structure, along with hover effects to enhance interactivity. It is fully responsive, ensuring a seamless experience across various screen sizes and devices.",
         liveLink: "https://kimdevpro.github.io/html-images-gallery",
         codeLink: "https://github.com/kimdevpro/html-images-gallery",
@@ -96,7 +96,7 @@ const projects = [
     },
     {
         title: "Ransom Note Generator",
-        image: "/assets/images/ransom-note-generator.jpg",
+        image: "./assets/images/ransom-note-generator.jpg",
         description: "A playful JavaScript project that transforms user-entered text into a ransom note-style layout with randomized fonts, sizes, and colors. This application highlights DOM manipulation, event handling, and dynamic styling. It allows users to input custom text and instantly see a visually chaotic, stylized output rendered in real-time.",
         liveLink: "https://kimdevpro.github.io/ransom-note-generator",
         codeLink: "https://github.com/kimdevpro/ransom-note-generator",
@@ -164,12 +164,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// TODO: Initialize EmailJS during workshop
-// SETUP: Sign up at https://www.emailjs.com/ and get your public key
-emailjs.init('ydhcwkfcUDLdi7uOh');
-
-// TODO: Add floating contact button functionality during workshop
-
 const floatingContactBtn = document.getElementById('floatingContactBtn');
 const emailModal = document.getElementById('emailModal');
 const modalClose = document.getElementById('modalClose');
@@ -191,48 +185,6 @@ emailModal.addEventListener('click', (e) => {
         emailModal.classList.remove('active');
     }
 });
-
-// Handle form submission with EmailJS
-// quickContactForm.addEventListener('submit', (e) => {
-//     e.preventDefault();
-//
-//     // Get form data
-//     const name = quickContactForm.querySelector('input[type="text"]').value;
-//     const email = quickContactForm.querySelector('input[type="email"]').value;
-//     const subject = quickContactForm.querySelector('input[type="text"]').value;
-//     const message = quickContactForm.querySelector('textarea').value;
-//
-//     // Show loading state
-//     const submitBtn = quickContactForm.querySelector('button[type="submit"]');
-//     const originalText = submitBtn.textContent;
-//     submitBtn.textContent = 'Sending...';
-//     submitBtn.disabled = true;
-//
-//     // Send email using EmailJS
-//     // Replace 'service_id' and 'template_id' with your actual IDs
-//     emailjs.send('service_j255fpf', 'template_al4qynd', {
-//         from_email: email,
-//         subject: subject,
-//         name: name,
-//         message: message,
-//         to_name: 'Kimberly Reddick'
-//     })
-//     .then((response) => {
-//         console.log('SUCCESS!', response.status, response.text);
-//         alert('Message sent successfully! Thanks for reaching out.');
-//         emailModal.classList.remove('active');
-//         quickContactForm.reset();
-//     })
-//     .catch((error) => {
-//         console.log('FAILED...', error);
-//         alert('Failed to send message. Please try again or email directly.');
-//     })
-//     .finally(() => {
-//         // Reset button state
-//         submitBtn.textContent = originalText;
-//         submitBtn.disabled = false;
-//     });
-// });
 
 // Hide floating button when contact section is visible
 const contactSection = document.getElementById('contact');
