@@ -1,84 +1,806 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kimberly Reddick - Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Professional portfolio of Kimberly Reddick, a business analyst, process automation specialist, and technical problem solver."
+    >
+
+    <title>Kimberly Reddick | Business Analyst & Process Automation Specialist</title>
+
+    <link rel="stylesheet" href="style.css">
+
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
 
-    <script src="script.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  </head>
-  <body>
-    
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="container">
-        <h1 class="hero-title">Interactive Web Development Portfolio</h1>
-        <p class="hero-subtitle">Kimberly Reddick </p>
-        <p class="hero-tagline">Software Engineer • Automation Developer • Technical Problem Solver</p>
-      </div>
-    </section>
+<body>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <div class="container">
-        <h2 class="section-title">My Projects</h2>
-        <div class="projects-grid">
-          <!-- Project Cards Go Here -->
-        </div>
-      </div>
-    </section>
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="#home" class="brand">
+                Kimberly Reddick
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Résumé</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="container hero-content">
+
+                <p class="eyebrow">Business and Technology Professional</p>
+
+                <h1>Kimberly Reddick</h1>
+
+                <h2>
+                    Business Analyst
+                    <span>•</span>
+                    Process Automation Specialist
+                    <span>•</span>
+                    Technical Problem Solver
+                </h2>
+
+                <p class="hero-description">
+                    I help organizations improve processes, automate
+                    repetitive work, and simplify complex technical
+                    challenges through practical, reliable solutions.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="button button-primary">
+                        View Featured Projects
+                    </a>
+
+                    <a href="#experience" class="button button-secondary">
+                        Explore My Experience
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Summary -->
+        <section class="intro-section">
+            <div class="container intro-layout">
+
+                <div>
+                    <p class="section-label">Professional Profile</p>
+
+                    <h2 class="left-section-title">
+                        Connecting business needs with practical technical solutions
+                    </h2>
+                </div>
+
+                <div class="intro-copy">
+                    <p>
+                        I bring more than two decades of experience solving
+                        business and technology problems across enterprise
+                        environments, healthcare, software support, automation,
+                        reporting, and independent product development.
+                    </p>
+
+                    <p>
+                        My strength is seeing the complete picture: understanding
+                        the business problem, organizing the requirements,
+                        designing the solution, documenting the process, and
+                        helping people use it successfully.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Highlights -->
+        <section class="highlights-section" id="highlights">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">Career Highlights</p>
+                    <h2>Experience that produces meaningful results</h2>
+                </div>
+
+                <div class="highlights-grid">
+
+                    <article class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+
+                        <strong>$1M+</strong>
+
+                        <h3>Estimated Savings</h3>
+
+                        <p>
+                            Generated through enterprise deployment automation
+                            and process improvement.
+                        </p>
+                    </article>
+
+                    <article class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <strong>25+</strong>
+
+                        <h3>Years of Experience</h3>
+
+                        <p>
+                            Solving technical, operational, documentation, and
+                            business process challenges.
+                        </p>
+                    </article>
+
+                    <article class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+
+                        <strong>Enterprise</strong>
+
+                        <h3>Technology Experience</h3>
+
+                        <p>
+                            Professional experience supporting IBM, Microsoft,
+                            Caremark, and other complex environments.
+                        </p>
+                    </article>
+
+                    <article class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+
+                        <strong>End-to-End</strong>
+
+                        <h3>Solution Development</h3>
+
+                        <p>
+                            From identifying the problem through implementation,
+                            documentation, and ongoing improvement.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">Selected Work</p>
+                    <h2>Featured Solutions & Projects</h2>
+
+                    <p class="section-introduction">
+                        Examples of how I have used technology, analysis, and
+                        process design to solve real business problems.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <div class="project-icon">
+                                <i class="fa-solid fa-gears"></i>
+                            </div>
+
+                            <div>
+                                <p class="project-category">
+                                    Enterprise Automation
+                                </p>
+
+                                <h3>
+                                    Static Content Deployment Automation
+                                </h3>
+
+                                <p class="project-organization">
+                                    Caremark
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="project-summary">
+                            Designed and implemented an automated process for
+                            distributing static website content through the
+                            company’s configuration management system.
+                        </p>
+
+                        <div class="impact-box">
+                            <span>Business Impact</span>
+                            <strong>$1M+</strong>
+                            <p>estimated company savings</p>
+                        </div>
+
+                        <div class="project-details">
+                            <h4>Key Contributions</h4>
+
+                            <ul>
+                                <li>
+                                    Replaced a costly manual deployment process
+                                </li>
+                                <li>
+                                    Reduced repetitive work and deployment risk
+                                </li>
+                                <li>
+                                    Improved release consistency and reliability
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-skills">
+                            <span>Process Automation</span>
+                            <span>Configuration Management</span>
+                            <span>Systems Analysis</span>
+                            <span>Process Improvement</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <div class="project-icon">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                            </div>
+
+                            <div>
+                                <p class="project-category">
+                                    Systems Automation
+                                </p>
+
+                                <h3>
+                                    Identity Management Migration Automation
+                                </h3>
+
+                                <p class="project-organization">
+                                    IBM
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="project-summary">
+                            Created scripts that prepared groups of servers for
+                            migration from one identity management platform to
+                            another.
+                        </p>
+
+                        <div class="impact-box">
+                            <span>Primary Result</span>
+                            <strong>Multi-Server</strong>
+                            <p>repeatable preparation workflow</p>
+                        </div>
+
+                        <div class="project-details">
+                            <h4>Key Contributions</h4>
+
+                            <ul>
+                                <li>
+                                    Processed multiple servers through a
+                                    repeatable workflow
+                                </li>
+                                <li>
+                                    Reduced repetitive server preparation work
+                                </li>
+                                <li>
+                                    Supported a coordinated two-phase migration
+                                    process
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-skills">
+                            <span>Scripting</span>
+                            <span>Identity Management</span>
+                            <span>Server Migration</span>
+                            <span>Workflow Design</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <div class="project-icon">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+
+                            <div>
+                                <p class="project-category">
+                                    Infrastructure Architecture
+                                </p>
+
+                                <h3>
+                                    Prescription Refill Platform
+                                </h3>
+
+                                <p class="project-organization">
+                                    Advance Paradigm / Caremark
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="project-summary">
+                            Designed the technical infrastructure supporting a
+                            prescription refill platform, including Apache and
+                            WebLogic environments.
+                        </p>
+
+                        <div class="impact-box">
+                            <span>Project Scope</span>
+                            <strong>End-to-End</strong>
+                            <p>architecture and migration preparation</p>
+                        </div>
+
+                        <div class="project-details">
+                            <h4>Key Contributions</h4>
+
+                            <ul>
+                                <li>
+                                    Designed the supporting server infrastructure
+                                </li>
+                                <li>
+                                    Prepared the platform for relocation to a
+                                    new data center
+                                </li>
+                                <li>
+                                    Created platform-specific preparation
+                                    instructions
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-skills">
+                            <span>Apache</span>
+                            <span>WebLogic</span>
+                            <span>Infrastructure Design</span>
+                            <span>Migration Planning</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <div class="project-icon">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+
+                            <div>
+                                <p class="project-category">
+                                    Technical Documentation
+                                </p>
+
+                                <h3>
+                                    Infrastructure Migration Guide
+                                </h3>
+
+                                <p class="project-organization">
+                                    Caremark
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="project-summary">
+                            Produced a structured migration package that gave
+                            technical teams the information and materials
+                            required to rebuild the platform environment.
+                        </p>
+
+                        <div class="impact-box">
+                            <span>Deliverable</span>
+                            <strong>Complete</strong>
+                            <p>migration reference package</p>
+                        </div>
+
+                        <div class="project-details">
+                            <h4>Key Contributions</h4>
+
+                            <ul>
+                                <li>
+                                    Documented server preparation requirements
+                                </li>
+                                <li>
+                                    Created instructions for each supported
+                                    platform
+                                </li>
+                                <li>
+                                    Organized installation materials into a
+                                    ring-bound guide
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-skills">
+                            <span>Technical Writing</span>
+                            <span>Process Documentation</span>
+                            <span>Knowledge Transfer</span>
+                            <span>Migration Support</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <div class="project-icon">
+                                <i class="fa-solid fa-tags"></i>
+                            </div>
+
+                            <div>
+                                <p class="project-category">
+                                    Independent Product Development
+                                </p>
+
+                                <h3>
+                                    Simple Price Manager
+                                </h3>
+
+                                <p class="project-organization">
+                                    Kim Simple Solutions
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="project-summary">
+                            Designed and built a Google Sheets tool that helps
+                            small businesses update product costs and
+                            automatically calculate retail pricing.
+                        </p>
+
+                        <div class="impact-box">
+                            <span>Product Value</span>
+                            <strong>3 Levels</strong>
+                            <p>of configurable retail markup</p>
+                        </div>
+
+                        <div class="project-details">
+                            <h4>Key Contributions</h4>
+
+                            <ul>
+                                <li>
+                                    Calculates retail prices from updated costs
+                                </li>
+                                <li>
+                                    Supports three customizable markup levels
+                                </li>
+                                <li>
+                                    Generates an organized printable price list
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-skills">
+                            <span>Google Sheets</span>
+                            <span>Google Apps Script</span>
+                            <span>Business Analysis</span>
+                            <span>Product Design</span>
+                            <span>Documentation</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="experience-section" id="experience">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">Professional Experience</p>
+                    <h2>A career built around solving problems</h2>
+
+                    <p class="section-introduction">
+                        My work has consistently combined technical expertise,
+                        business understanding, clear communication, and a
+                        strong focus on practical results.
+                    </p>
+                </div>
+
+                <div class="experience-list">
+
+                    <article class="experience-item">
+                        <div class="experience-company">
+                            <i class="fa-brands fa-microsoft"></i>
+
+                            <div>
+                                <h3>Microsoft 365 Authentication Support</h3>
+                                <p>Microsoft environment through Apex Systems</p>
+                            </div>
+                        </div>
+
+                        <ul>
+                            <li>
+                                Investigated complex authentication and access
+                                issues
+                            </li>
+                            <li>
+                                Gathered technical details and identified likely
+                                causes
+                            </li>
+                            <li>
+                                Communicated findings and next steps clearly
+                            </li>
+                            <li>
+                                Worked across technical systems and customer
+                                requirements
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="experience-item">
+                        <div class="experience-company">
+                            <i class="fa-solid fa-building"></i>
+
+                            <div>
+                                <h3>Enterprise Systems and Automation</h3>
+                                <p>IBM</p>
+                            </div>
+                        </div>
+
+                        <ul>
+                            <li>
+                                Developed scripts and repeatable technical
+                                processes
+                            </li>
+                            <li>
+                                Supported identity management and server
+                                migration work
+                            </li>
+                            <li>
+                                Extracted data and produced operational reports
+                            </li>
+                            <li>
+                                Automated alerts, reporting, and recurring
+                                technical tasks
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="experience-item">
+                        <div class="experience-company">
+                            <i class="fa-solid fa-heart-pulse"></i>
+
+                            <div>
+                                <h3>Architecture, Automation & Documentation</h3>
+                                <p>Advance Paradigm / Caremark</p>
+                            </div>
+                        </div>
+
+                        <ul>
+                            <li>
+                                Designed technical infrastructure for business
+                                applications
+                            </li>
+                            <li>
+                                Automated enterprise deployment processes
+                            </li>
+                            <li>
+                                Prepared complex environments for migration
+                            </li>
+                            <li>
+                                Created detailed technical documentation and
+                                knowledge-transfer materials
+                            </li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">Core Capabilities</p>
+                    <h2>Skills that connect people, processes, and technology</h2>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        <h3>Business Analysis</h3>
+
+                        <ul>
+                            <li>Requirements discovery</li>
+                            <li>Process analysis</li>
+                            <li>Problem definition</li>
+                            <li>Solution evaluation</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <i class="fa-solid fa-gears"></i>
+                        <h3>Process Automation</h3>
+
+                        <ul>
+                            <li>Workflow design</li>
+                            <li>Scripted automation</li>
+                            <li>Repeatable processes</li>
+                            <li>Operational efficiency</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <i class="fa-solid fa-chart-column"></i>
+                        <h3>Data & Reporting</h3>
+
+                        <ul>
+                            <li>Data extraction</li>
+                            <li>Operational reporting</li>
+                            <li>Log analysis</li>
+                            <li>Automated alerts</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <h3>Technical Documentation</h3>
+
+                        <ul>
+                            <li>Process documentation</li>
+                            <li>Implementation guides</li>
+                            <li>Knowledge transfer</li>
+                            <li>User instructions</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <i class="fa-solid fa-server"></i>
+                        <h3>Systems & Infrastructure</h3>
+
+                        <ul>
+                            <li>Server environments</li>
+                            <li>Identity management</li>
+                            <li>Migration planning</li>
+                            <li>Configuration management</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <h3>Product Development</h3>
+
+                        <ul>
+                            <li>Business tool design</li>
+                            <li>Google Sheets solutions</li>
+                            <li>Product documentation</li>
+                            <li>Usability improvement</li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume -->
+        <section class="resume-section" id="resume">
+            <div class="container resume-layout">
+
+                <div>
+                    <p class="section-label">Résumé</p>
+
+                    <h2>
+                        Looking for more details about my professional background?
+                    </h2>
+
+                    <p>
+                        Download my résumé for a complete overview of my
+                        experience, technical background, and professional
+                        qualifications.
+                    </p>
+                </div>
+
+                <div class="resume-action">
+                    <!-- Replace this filename after the résumé is completed -->
+                    <a
+                        href="assets/Kimberly-Reddick-Business-Systems-Analyst-Resume.pdf"
+                        class="button button-primary-dark"
+                        download
+                    >
+                        <i class="fa-solid fa-download"></i>
+                        Download Résumé
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-layout">
+
+                <div>
+                    <p class="section-label">Contact</p>
+
+                    <h2>Let’s talk about how I can help</h2>
+
+                    <p>
+                        I am interested in remote business analysis, reporting,
+                        process improvement, technical documentation, and
+                        automation opportunities.
+                    </p>
+                </div>
+
+                <div class="contact-links">
+
+                    <!-- Replace with your professional email -->
+                    <a href="mailto:kimreddick70@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <span>
+                            <small>Email</small>
+                            kimreddick70@gmail.com
+                        </span>
+                    </a>
+
+                    <!-- Replace with your LinkedIn profile URL -->
+                    <a
+                        href="https://www.linkedin.com/in/kimreddick/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-linkedin"></i>
+
+                        <span>
+                            <small>LinkedIn</small>
+                            Connect with Kimberly
+                        </span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2025 Kimberly Reddick. All rights reserved.  Built with <i class="fas fa-heart heart"></i>
-        and lots of <img src="./assets/icons/dr-pepper.png" alt="Dr. Pepper" class="dr-pepper"/>.</p>
-      </div>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>
+                © <span id="current-year"></span> Kimberly Reddick.
+                All rights reserved.
+            </p>
+
+            <a href="#home">Back to top</a>
+        </div>
     </footer>
 
-    <button class="floating-contact-btn" id="floatingContactBtn" aria-label="Send Email">
-        <i class="fas fa-envelope"></i>
-    </button>
-
-    <div class="email-modal" id="emailModal">
-        <div class="modal-content">
-            <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
-            <h3>Contact Me</h3>
-            <form
-                  action="https://formspree.io/f/mvgqegwp"
-                  method="POST"
-                  class="contact-form"
-            >
-            <div class="form-group">
-              <label for="name">Name   </label>
-              <input type="text" id="name" name="name" required />
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email  </label>
-              <input type="email" id="email" name="email" required />
-            </div>
-
-            <div class="form-group">
-              <label for="number">Phone  </label>
-              <input type="text" id="number" name="number" />
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <div class="form-submit">
-              <button type="submit" class="btn-secondary">Send Message</button>
-            </div>
-          </form>
-        </div>
-    </div>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
